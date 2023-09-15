@@ -4,6 +4,7 @@ import { Addition } from '../models/addition';
 import { Subtraction } from '../models/subtraction';
 import { FormControl } from '@angular/forms';
 import { Multiplication } from '../models/multiplication';
+import { Division } from '../models/division';
 
 @Component({
   selector: 'app-calculator',
@@ -22,6 +23,7 @@ export class CalculatorComponent {
     this.aritmeticOperations.push(new Addition());
     this.aritmeticOperations.push(new Subtraction());
     this.aritmeticOperations.push(new Multiplication());
+    this.aritmeticOperations.push(new Division());
     this.value1.setValue(0);
     this.value2.setValue(0);
   }
