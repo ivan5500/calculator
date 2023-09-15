@@ -1,6 +1,16 @@
-<p>calculator works!</p>
+<!-- Form with two inputs-->
+<label for="firstValue">First Value: </label>
+<input id="name" type="number" [formControl]="value1">
 
 <!-- Show all aritmeticOperations-->
 <div *ngFor="let operation of aritmeticOperations">
-  <app-btn [operation]="operation"></app-btn>
+    <!-- <app-btn [operation]="operation"></app-btn> -->
+    <button (click)="setOperation(operation)">{{operation?.simbol}}</button>
 </div>
+
+<label for="secondValue">First Value: </label>
+<input id="name" type="number" [formControl]="value2">
+
+<!-- Show result -->
+<button (click)="makeOperation()">=</button>
+<p>Result: {{result}}</p>

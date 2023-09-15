@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CalculatorComponent } from './calculator.component';
 import { BtnModule } from '../btn/btn.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,6 +12,7 @@ import { BtnModule } from '../btn/btn.module';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     BtnModule
   ],
   exports: [
