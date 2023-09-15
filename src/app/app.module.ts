@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BtnModule } from './btn/btn.module';
+import { CalculatorModule } from './calculator/calculator.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { BtnModule } from './btn/btn.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BtnModule
+    CalculatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

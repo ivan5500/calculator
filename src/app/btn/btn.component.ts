@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Operation } from '../models/operation';
 
 @Component({
   selector: 'app-btn',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./btn.component.css']
 })
 export class BtnComponent {
+  @Input() operation?: Operation;
 
+  constructor() { 
+
+  }
 }

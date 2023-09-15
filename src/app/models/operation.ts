@@ -1,13 +1,8 @@
 import { OperationType } from "../util/operation-type";
 
-export abstract class Operation {
+export interface Operation {
     type: OperationType;
-    simbol: string = '';
+    simbol: string;
 
-    constructor(type: OperationType, simbol: string) {
-        this.type = type;
-        this.simbol = simbol;
-    }
-
-    abstract makeOperation(value1: number, value2: number): number;
+    makeOperation(value1: number, value2: number): number;
 }
